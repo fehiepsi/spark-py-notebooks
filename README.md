@@ -13,6 +13,12 @@ using Python and R.
 
 ## Instructions  
 
++ Create `spark` environment, install `jupyter`
++ Install `toree` by `pip install -i https://pypi.anaconda.org/hyoon/simple toree`
++ Download [Spark](https://spark.apache.org/downloads.html), extract, rename, and move the folder into `/usr/local/`
++ Setup the PATH: `export SPARK_HOME=/usr/local/spark` and `export PATH=$PATH:$SPARK_HOME/bin`
++ Install jupyter kernels: `jupyter toree install --sys-prefix --interpreters=Scala,PySpark,SQL`
+
 A good way of using these notebooks is by first cloning the repo, and then 
 starting your own [IPython notebook](http://ipython.org/notebook.html)/[Jupyter](https://jupyter.org/) in 
 **pySpark mode**. For example, if we have a *standalone* Spark installation
